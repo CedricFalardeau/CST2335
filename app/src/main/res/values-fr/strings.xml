@@ -7,4 +7,9 @@
     <string name="login_name">Nomb</string>
     <string name="password_message">Passe</string>
     <string name="switch_message">ca fait qoi?</string>
+    <string name="LoginButtonText">Entré</string>
+    <string name="dialog_message">Voulez vous Finir cète activité?</string>
+    <string name="dialog_title">fini cète activité</string>
+    <string name="ok">Oui</string>
+    <string name="cancel">Annulé</string>
 </resources>
