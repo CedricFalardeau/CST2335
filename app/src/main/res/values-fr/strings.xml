@@ -12,4 +12,10 @@
     <string name="dialog_title">fini cète activité</string>
     <string name="ok">Oui</string>
     <string name="cancel">Annulé</string>
+    <string name="StartChat">Commence a bavarder</string>
+    <string name="send">Envoié</string>
+    <string name="ChatText">Parle</string>
+    <string name="radioButton">ButtonRadio</string>
+    <string name="checkBox">Case a coché</string>
+
 </resources>

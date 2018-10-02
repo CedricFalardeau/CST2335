@@ -39,6 +39,7 @@ super.onDestroy();
         setContentView(R.layout.activity_start);
 
         Button button = (Button) this.findViewById(R.id.button);
+        final Button startChat = (Button) this.findViewById(R.id.StartChat);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,6 +54,15 @@ super.onDestroy();
             }
         });
 
+        startChat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.i(ACTIVITY_NAME, "User clicked Start Chat");
+                Intent intent = new Intent(StartActivity.this, ChatWindow.class);
+                startActivityForResult(intent,50);
+            }
+        });
+
 
 
     }
@@ -60,10 +70,8 @@ super.onDestroy();
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
-        if (requestCode== 50){
+        if (requestCode== 50 && resultCode== Activity.RESULT_OK){
             Log.i(ACTIVITY_NAME, "Returned to StartActivity.onActivityResult");
-        }
-        if ( resultCode== Activity.RESULT_OK){
             String messagePassed = data.getStringExtra("Response");
 
             int duration = Toast.LENGTH_SHORT;
